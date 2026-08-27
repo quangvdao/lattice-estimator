@@ -19,6 +19,9 @@ TESTS::
     >>> from estimator.reduction import RC
     >>> SISLattice()(params, zeta=32, d=96, red_cost_model=RC.BDGL16, log_level=0)["rop"] == oo
     True
+    >>> euclidean = SISParameters(n=512, q=2**200, m=1024, length_bound=1000, norm=2)
+    >>> SISLattice()(euclidean, d=40, red_cost_model=RC.BDGL16, log_level=0)["beta"]
+    40
 
 """
 from functools import partial
@@ -399,6 +402,7 @@ class SISLattice:
                 )
             cost = self.cost_euclidean(
                 params=params,
+                d=kwds.get("d"),
                 red_cost_model=red_cost_model,
                 log_level=log_level + 1,
             )
