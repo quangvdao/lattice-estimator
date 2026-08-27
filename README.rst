@@ -179,6 +179,8 @@ License
 -------
 
 The estimator is licensed under the `LGPLv3+ <https://www.gnu.org/licenses/lgpl-3.0.en.html>`__ license.
+The complete terms are included in `COPYING.LESSER <COPYING.LESSER>`__ together with the incorporated
+`GNU GPLv3 terms <COPYING>`__.
 
 
 Third Party Tools Using this Estimator

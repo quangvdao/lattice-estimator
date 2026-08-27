@@ -7,8 +7,12 @@ name = "lattice-estimator"
 version = "0.1.0"
 description = "Lattice-based cryptographic parameter estimator"
 readme = "README.rst"
+license = { file = "COPYING.LESSER" }
 requires-python = ">=3.9"
 dependencies = []
+classifiers = [
+  "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+]
 
 [tool.uv]
 python-preference = "system"
